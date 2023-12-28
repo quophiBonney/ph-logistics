@@ -1,0 +1,25 @@
+.home-hero {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/about-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  background-position: center center;
+  min-height: 100vh;
+}
+@media only screen and (max-width: 1199px) {
+  .home-hero {
+    min-height: 40vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-hero {
+    min-height: 75vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

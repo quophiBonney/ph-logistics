@@ -1,0 +1,30 @@
+.contact-hero {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../assets/contact-banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  flex-direction: column;
+  background-position: center center;
+  min-height: 65vh;
+}
+.intouch-bg {
+  background: linear-gradient(rgba(2, 15, 129, 0.712), rgba(2, 15, 129, 0.712)),
+    url("../assets/cargo-on-sea.jpg");
+  background-size: cover;
+}
+@media only screen and (max-width: 1199px) {
+  .contact-hero {
+    min-height: 40vh;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-hero {
+    min-height: 55vh;
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
