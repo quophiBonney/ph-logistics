@@ -134,12 +134,12 @@ const Intouch = () => {
             </h3>
             <Link
               href="tel:+233549485984"
-              className="p-2 px-5 btn btn-outline-light w-50 fw-bold text-uppercase"
+              className="p-2 px-3 btn btn-outline-light w-50 fw-bold text-uppercase"
             >
               Talk To Us
             </Link>
           </div>
-          <div className="card px-5 mt-3 mb-5">
+          <div className="card px-3 mt-3 mb-5">
             <ul style={{ listStyle: "none" }} className="mt-3">
               <li>
                 <div className="d-flex">

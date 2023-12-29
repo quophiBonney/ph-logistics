@@ -100,10 +100,10 @@ const ServicesCard = () => {
       </div>
       <div className="row mt-5 mb-3">
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex-fill bg-light h-100 mt-3">
-          <h3 className="fw-bold text-uppercase text-primary mb-5 mx-5 px-5 mt-3">
+          <h3 className="fw-bold text-uppercase text-primary mb-5 px-5 mt-3">
             Why Choose Us
           </h3>
-          <div className="d-flex mt-3 mx-5 px-5">
+          <div className="d-flex mt-3 px-5">
             <div className="">
               <FaLock size={30} className="text-primary" />
             </div>
@@ -117,7 +117,7 @@ const ServicesCard = () => {
               </p>
             </div>
           </div>
-          <div className="d-flex mt-3 mx-5 px-5">
+          <div className="d-flex mt-3 px-5">
             <div className="">
               <TbWorld size={30} className="text-primary" />
             </div>
@@ -131,7 +131,7 @@ const ServicesCard = () => {
               </p>
             </div>
           </div>
-          <div className="d-flex mt-3 mx-5 px-5">
+          <div className="d-flex mt-3 px-5">
             <div className="">
               <FaEdit size={30} className="text-primary" />
             </div>
