@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import cargo from "../assets/cargo.jpg";
+import cargo from "../assets/cargo-container.jpg";
 import Link from "next/link";
 const Welcome = () => {
   return (
