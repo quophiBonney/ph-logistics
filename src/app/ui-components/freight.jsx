@@ -76,8 +76,8 @@ const Freight = () => {
             <p>
               Let PH Logistics take the hassle out of logistics! We handle
               everything from pick-up at your door to delivery at your
-              recipient's, including expert customs clearance, leaving you free
-              to focus on what matters most
+              recipient&#39;s, including expert customs clearance, leaving you
+              free to focus on what matters most
             </p>
             <div className="d-flex justify-content-between">
               <div>

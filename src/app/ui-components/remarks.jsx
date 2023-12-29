@@ -12,8 +12,8 @@ const Remarks = () => {
       <div className="row justify-content-center">
         <div className="col-12 text-center">
           <h4 className="text-muted fw-bold fs-3 fw-bold">
-            We're fast, efficient, cost effective, and reliable in all areas of
-            shipping, freight forwarding, cargo handling and total logistics
+            We&#39;re fast, efficient, cost effective, and reliable in all areas
+            of shipping, freight forwarding, cargo handling and total logistics
             solutions.
           </h4>
         </div>

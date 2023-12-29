@@ -19,9 +19,8 @@ const NavigationBar = () => {
             src={logo}
             alt="PH Logistics logo"
             className="img-fluid"
-            width={150}
-            height={150}
-            style={{ objectFit: "cover" }}
+            priority
+            style={{ objectFit: "contain", width: "150px", height: "60px" }}
           />
         </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-light" />

@@ -149,10 +149,10 @@ const ServicesCard = () => {
         </div>
         <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex-fill bg-primary m-0 p-0 text-light">
           <h3 className="h-100 text-uppercase mt-5 px-5 fw-bold py-5 mb-3">
-            Boost your supply chain efficiency and cut costs with PH Logistic's
-            custom-tailored logistics solutions. We cater to both corporations
-            and individuals, ensuring your cargo moves seamlessly and arrives on
-            time
+            Boost your supply chain efficiency and cut costs with PH
+            Logistic&#39;s custom-tailored logistics solutions. We cater to both
+            corporations and individuals, ensuring your cargo moves seamlessly
+            and arrives on time
           </h3>
         </div>
       </div>

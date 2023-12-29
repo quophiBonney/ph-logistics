@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import partner1 from "../assets/partner1.png";
 import partner5 from "../assets/partner5.png";
-import partner6 from "../assets/partner6.jpg";
 import partner3 from "../assets/partner3.png";
 import partner4 from "../assets/partner4.png";
 
@@ -51,14 +50,6 @@ const Partners = () => {
           <div className="mx-2">
             <Image
               src={partner4}
-              alt="partner of PH Logistics Ghana"
-              className="img-fluid"
-              width={200}
-            />
-          </div>
-          <div className="mx-2">
-            <Image
-              src={partner6}
               alt="partner of PH Logistics Ghana"
               className="img-fluid"
               width={200}

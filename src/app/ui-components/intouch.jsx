@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import {
   FaClock,
@@ -10,11 +11,47 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 const Intouch = () => {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.firstName]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch("/api/submitForm", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      if (response.ok) {
+        alert("Message sent successfully");
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        alert("Message not sent, please try again");
+      }
+    } catch (error) {
+      console.error("Error Message:", error);
+    }
+  };
   return (
     <div className="container mb-5" style={{ marginTop: "100px" }}>
       <div className="row">
         <div
-          className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 flex-fill"
+          className="col-xs-12 col-sm-12 col-md-12 col-lg-6 mt-4 flex-fill"
           data-aos="zoom-out"
           data-aos-duration="1000"
           data-aos-delay="100"
@@ -28,13 +65,14 @@ const Intouch = () => {
               24 business hours
             </p>
             <div className="mt-4 mb-4">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="d-flex justify-content-between">
                   <div className="form-group mt-4 w-100">
                     <input
                       type="text"
                       placeholder="First Name"
                       className="form-control p-3"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group mt-4 w-100 mx-4">
@@ -42,6 +80,7 @@ const Intouch = () => {
                       type="text"
                       placeholder="Last Name"
                       className="form-control p-3"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -51,6 +90,7 @@ const Intouch = () => {
                       type="text"
                       placeholder="Email address"
                       className="form-control p-3"
+                      onChange={handleChange}
                     />
                   </div>
                   <div className="form-group mt-4 w-100 mx-4">
@@ -58,6 +98,7 @@ const Intouch = () => {
                       type="text"
                       placeholder="Phone No:"
                       className="form-control p-3"
+                      onChange={handleChange}
                     />
                   </div>
                 </div>
@@ -65,8 +106,9 @@ const Intouch = () => {
                   <textarea
                     rows={8}
                     type="text"
-                    placeholder="Email address"
+                    placeholder="How may we help you?"
                     className="form-control"
+                    onChange={handleChange}
                   />
                 </div>
                 <div className="form-group mt-4 w-100">
@@ -81,7 +123,7 @@ const Intouch = () => {
           </div>
         </div>
         <div
-          className="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-4 flex-fill"
+          className="col-xs-12 col-sm-12 col-md-12 col-lg-6 mt-4 flex-fill"
           data-aos="flip-left"
           data-aos-duration="1500"
           data-aos-delay="500"
@@ -97,7 +139,7 @@ const Intouch = () => {
               Talk To Us
             </Link>
           </div>
-          <div className="card px-5 mt-3 mb-5 h-50">
+          <div className="card px-5 mt-3 mb-5">
             <ul style={{ listStyle: "none" }} className="mt-3">
               <li>
                 <div className="d-flex">

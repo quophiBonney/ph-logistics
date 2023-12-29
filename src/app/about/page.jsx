@@ -15,7 +15,6 @@ const About = () => {
     <div>
       <AboutHero />
       <AboutUs />
-      <Partners />
       <Gallery />
     </div>
   );

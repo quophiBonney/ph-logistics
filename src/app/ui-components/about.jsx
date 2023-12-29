@@ -81,7 +81,7 @@ const About = () => {
                 Founded by Miss Vida Akapo with a vision of becoming the most
                 trusted partner for every individual and business, delivering
                 exceptional experiences and personalized solutions that exceed
-                expectations in shipping and logistics., we've grown from a a
+                expectations in shipping and logistics., we have grown from a a
                 start-up into a household name in the world of logistics and
                 shipping including warehousing, customs clearance, tracking of
                 goods etc.
