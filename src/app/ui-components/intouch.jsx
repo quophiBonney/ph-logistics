@@ -11,6 +11,11 @@ import {
   FaYoutubeSquare,
 } from "react-icons/fa";
 const Intouch = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -18,35 +23,25 @@ const Intouch = () => {
     phone: "",
     message: "",
   });
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.firstName]: e.target.value });
+  const handleChange = () => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      const response = await fetch("/api/submitForm", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      if (response.ok) {
-        alert("Message sent successfully");
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          phone: "",
-          message: "",
-        });
-      } else {
-        alert("Message not sent, please try again");
-      }
-    } catch (error) {
-      console.error("Error Message:", error);
-    }
+    const response = await fetch("/api/route", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    console.log(await response.json());
   };
+
   return (
     <div className="container mb-5" style={{ marginTop: "100px" }}>
       <div className="row">
@@ -72,15 +67,18 @@ const Intouch = () => {
                       type="text"
                       placeholder="First Name"
                       className="form-control p-3"
+                      name="firstName"
+                      value={formData.firstName}
                       onChange={handleChange}
                     />
                   </div>
-                  <div className="form-group mt-4 w-100 mx-4">
+                  <div className="form-group mt-4 w-100 mx-2">
                     <input
                       type="text"
                       placeholder="Last Name"
                       className="form-control p-3"
-                      onChange={handleChange}
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
                     />
                   </div>
                 </div>
@@ -90,25 +88,29 @@ const Intouch = () => {
                       type="text"
                       placeholder="Email address"
                       className="form-control p-3"
-                      onChange={handleChange}
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
-                  <div className="form-group mt-4 w-100 mx-4">
+                  <div className="form-group mt-4 w-100 mx-2">
                     <input
                       type="text"
                       placeholder="Phone No:"
                       className="form-control p-3"
-                      onChange={handleChange}
+                      value={phone}
+                      onChange={(e) => setPhone(e.target.value)}
                     />
                   </div>
                 </div>
                 <div className="form-group mt-4 w-100">
                   <textarea
-                    rows={8}
+                    rows={10}
+                    cols={6}
                     type="text"
                     placeholder="How may we help you?"
                     className="form-control"
-                    onChange={handleChange}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
                 <div className="form-group mt-4 w-100">

@@ -16,24 +16,26 @@ const Welcome = () => {
             <h3 className="text-uppercase text-primary">
               Welcome To PH Logistics
             </h3>
-            <p>
-              PH Logistics is a Shipping and Logistics service provider. We are
-              located in Ghana, and the West African sub-region. Your delivery
-              is our priority. Futhermore our dedicated team of professional
-              logistics experts work 24/7 in order to ensure that the right
-              cargo is delivered to the right customer, at the right place and
-              similarly, at the right time. Above all, in the right condition,
-              in the right quantity, and at the right price.
-            </p>
-            <p>
-              Our comprehensive expert services cover the fields of shipping,
-              clearing and logistics, with a strong international network to
-              further bolster our operations. We provide a proximity service
-              combined with significant local and international capacity. Our
-              aim is to supply simple, yet innovative, logistics solutions to
-              meet even the most complex requirements. Our team of logistics
-              professionals work 24/7 to ensure your 100% satisfaction.
-            </p>
+            <article>
+              <p>
+                PH Logistics is a Shipping and Logistics service provider. We
+                are located in Ghana, and the West African sub-region. Your
+                delivery is our priority. Futhermore our dedicated team of
+                professional logistics experts work 24/7 in order to ensure that
+                the right cargo is delivered to the right customer, at the right
+                place and similarly, at the right time. Above all, in the right
+                condition, in the right quantity, and at the right price.
+              </p>
+              <p>
+                Our comprehensive expert services cover the fields of shipping,
+                clearing and logistics, with a strong international network to
+                further bolster our operations. We provide a proximity service
+                combined with significant local and international capacity. Our
+                aim is to supply simple, yet innovative, logistics solutions to
+                meet even the most complex requirements. Our team of logistics
+                professionals work 24/7 to ensure your 100% satisfaction.
+              </p>
+            </article>
             <div>
               <Link
                 href="/"

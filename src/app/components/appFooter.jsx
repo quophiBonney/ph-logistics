@@ -76,7 +76,7 @@ const AppFooter = () => {
               <div className="d-flex justify-content-between">
                 <div className="bg-primary w-50 h-50 text-center p-3 card">
                   <Link
-                    href="https://www.facebook.com/@ph_logistics_gh"
+                    href="https://www.facebook.com/ph_logistics_gh"
                     target="_blank"
                     className="text-light"
                   >
@@ -92,7 +92,7 @@ const AppFooter = () => {
               <div className="d-flex justify-content-between mt-3">
                 <div className="bg-outline-light w-50 h-50 text-center p-3 card">
                   <Link
-                    href="https://www.instagram.com/@ph_logistics_gh"
+                    href="https://www.instagram.com/ph_logistics_gh"
                     target="_blank"
                     className="text-dark"
                   >

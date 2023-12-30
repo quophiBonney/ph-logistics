@@ -13,11 +13,11 @@ const About = () => {
               data-aos-delay="100"
               data-aos-duration="1000"
             >
-              <h3 className="text-uppercase">
+              <h2 className="text-uppercase">
                 Welcome To&nbsp;
                 <span className="text-primary">PH Logistics Company</span>, Your
                 Authentic And Reliable Logistics Provider
-              </h3>
+              </h2>
               <p>
                 PH Logistics was established in November 2020 with headquarter
                 in Accra and branches in Tema. The Company has presence in over
@@ -53,7 +53,6 @@ const About = () => {
                 improvement.
               </p>
             </div>
-
             <div
               data-aos="flip-right"
               data-aos-delay="100"
@@ -76,7 +75,7 @@ const About = () => {
               data-aos-delay="400"
               data-aos-duration="1500"
             >
-              <h4 className="text-uppercase mt-3">Our History</h4>
+              <h2 className="text-uppercase mt-3">Our History</h2>
               <p>
                 Founded by Miss Vida Akapo with a vision of becoming the most
                 trusted partner for every individual and business, delivering
@@ -93,7 +92,7 @@ const About = () => {
               data-aos-delay="400"
               data-aos-duration="1500"
             >
-              <h4 className="text-uppercase mt-3">Our Mission</h4>
+              <h2 className="text-uppercase mt-3">Our Mission</h2>
               <p>
                 To empower global trade through intelligent, sustainable, and
                 human-centered shipping and logistics solutions, exceeding

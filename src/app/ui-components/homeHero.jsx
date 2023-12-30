@@ -10,7 +10,7 @@ const HomeHero = () => {
     cursorBlinking: 0,
   });
   return (
-    <div className="container-fluid px-4 home-hero">
+    <div className="container-fluid px-4 home-hero-background">
       <div className="container">
         <div className="row">
           <div

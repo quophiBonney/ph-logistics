@@ -2,7 +2,7 @@ import React from "react";
 
 const ServicesHero = () => {
   return (
-    <div className="container-fluid services-hero">
+    <div className="container-fluid services-hero-background">
       <div className="row">
         <div
           className="col-12 mt-5 text-center"
